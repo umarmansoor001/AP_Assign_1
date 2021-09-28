@@ -1,8 +1,5 @@
 package APAssign;
 
-public class myClass {
-	//Array Programs - ArrayInsertion, ArrayDeletion, DisplayArray, LinearSearch, BinarySearch, BubbleSort
-
 import java.util.*;
 public class Array{
 	static int [] array;  //array
@@ -112,4 +109,3 @@ public class Array{
 	}
 }
 
-}
