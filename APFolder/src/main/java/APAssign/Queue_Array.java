@@ -2,13 +2,13 @@ package APAssign;
 
 //Program to implement Circular Queue using an array.
 
-public class Queue{
+public class Queue_Array{
 	static int [] array;  //arary to store values.
 	static int size;      //number of elements in the queue.
 	static int addPointer;//points to position where the latest number is added.
 	static int removePointer;//point to position of the number which is to be deleted.
 	
-	public Queue(int size){
+	public Queue_Array(int size){
 		array=new int[size+1];
 		this.size=0;
 		addPointer=0;
@@ -79,7 +79,7 @@ public class Queue{
 	
 	//main function to run the program.
 	static public void main(String [] args){
-		Queue queue = new Queue(5); //create a queue 
+		Queue_Array queue = new Queue_Array(5); //create a queue 
 		queue.enqueue(10); //add num = 10
 		queue.enqueue(20); //add num = 20
 		queue.enqueue(30); //add num = 30

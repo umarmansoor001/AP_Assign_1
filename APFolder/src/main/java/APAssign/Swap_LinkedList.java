@@ -3,7 +3,7 @@ package APAssign;
 //Program to swap data values of first and last node.
 //e.g List = 1->2->3->4 , after swap List = 4->2->3->1
 
-public class LinkedList{
+public class Swap_LinkedList{
 	static class Node{
 		int key;    //store the data value.
 		Node next;  //points to next element of the list.
@@ -17,7 +17,7 @@ public class LinkedList{
 	static Node head;  //head node i.e first element.
 	static int size;   //number of elements in the list.
 
-	public LinkedList(){
+	public Swap_LinkedList(){
 		head=null;
 	}
 
@@ -89,7 +89,7 @@ public class LinkedList{
 
 	//main function to run the program.
 	public static void main(String [] args){
-		LinkedList list = new LinkedList();
+		Swap_LinkedList list = new Swap_LinkedList();
 		list.pushFront(10);
 		list.pushBack(12);
 		list.pushFront(8);

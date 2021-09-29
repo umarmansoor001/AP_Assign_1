@@ -4,7 +4,7 @@ package APAssign;
 public class Stack{
 	//class Node for LinkedList.
 	static class Node{
-		int key;   //data value
+		int key;   //data values
 		Node next; //next pointer
 		
 		public Node(int number){

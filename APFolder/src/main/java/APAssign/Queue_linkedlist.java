@@ -1,7 +1,7 @@
 package APAssign;
 
 //Program to implement Queue fusing LinkedList.
-public class Queue{
+public class Queue_linkedlist{
 	//class for elements.
 	static class Node{
 		int key;  //data value
@@ -16,7 +16,7 @@ public class Queue{
 	static int size;   //number of elements in the queue.
 	static Node head;  //head of the queue i.e first element.
 	
-	public Queue(){
+	public Queue_linkedlist(){
 		size=0;
 		head=null;
 	}
@@ -72,7 +72,7 @@ public class Queue{
 	
 	//main function to run the program.
 	static public void main(String [] args){
-		Queue queue = new Queue();
+		Queue_linkedlist queue = new Queue_linkedlist();
 		queue.enqueue(10);
 		queue.enqueue(20);
 		queue.enqueue(30);
