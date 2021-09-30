@@ -99,7 +99,6 @@ public class Array{
 
 		array.delete(3);   //delete num at pos=3 from the array.
 		array.display();   //display the array.
-
 		System.out.println(array.linearSearch(40)); //check 40 is present in the array using linearSearch.
 
 		array.bubbleSort();//sort the array.
