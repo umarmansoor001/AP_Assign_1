@@ -1,9 +1,11 @@
 package APAssign;
 
+import APAssign.Linked_list;
+
 //Program to execute the LinedList.
 public class LinkedListImplementation{
 	public static void main(String [] args){
-		LinkedList list = new LinkedList(); //create a LinkedList.
+		Linked_list list = new Linked_list(); //create a LinkedList.
 		try{
 			list.add(10);
 			list.popFront();

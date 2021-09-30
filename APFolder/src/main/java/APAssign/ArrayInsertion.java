@@ -31,7 +31,7 @@ public class ArrayInsertion{
 	}
 
 	//function to display the array.
-	private static void display(int [] array){
+	public static void display(int [] array){
 		for(int i=0;i<array.length;i++){
 			System.out.print(array[i] + " ");
 		}
@@ -46,6 +46,7 @@ public class ArrayInsertion{
 		insert(array,12,4);
 		insert(array,2,6);
 		insert(array,90,3);
-		insert(array,16,7);
+		insert(array,16,9);
+		System.out.println(ArrayInsertion.size);
 	}
 }	 

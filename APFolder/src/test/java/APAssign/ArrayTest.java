@@ -41,7 +41,7 @@ public class ArrayTest {
 	public void testdelete(){
 		//Testing
 		array.bubbleSort();//sorting array first
-		//array={1,5,7,19,20,32};
+		//array={1,5,7,19,20,32}
 		array.delete(2);//index->2 value 7 will be removed
 		Assert.assertFalse(array.linearSearch(7));
 		array.insert(7, 2);
@@ -59,10 +59,16 @@ public class ArrayTest {
 		expected_array.insert(19, 3);
 		expected_array.insert(20, 4);
 		expected_array.insert(32, 5);
-		// expected_array contains{1,5,7,19,20,32};
-		// array contains{1,5,7,19,20,32};
-		assertEquals(expected_array, array); 
+		// expected_array contains{1,5,7,19,20,32}
+		// array contains{1,5,7,19,20,32}
+		assertArrayEquals(expected_array.array, array.array); 
 	}
-	
-
+	@Test(expected = IndexOutOfBoundsException.class)
+	public void testInsert(){
+		for(int i=0; i<=100;i++)
+		{
+			array.insert(i, i);//this throws exception at 100 index
+			//there is no proper index validation checks in function(insert()) in Array.java file
+		}
+	}
 }
